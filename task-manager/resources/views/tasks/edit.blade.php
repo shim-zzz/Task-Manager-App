@@ -17,5 +17,10 @@
         <input type="text" name="title" value="{{ $task->title }}" required>
 
         <br><br>
+
+        <label>Description:</label>
+        <textarea name="description">{{ $task->description }}</textarea>
+
+        <br><br>
 </body>
 </html>
