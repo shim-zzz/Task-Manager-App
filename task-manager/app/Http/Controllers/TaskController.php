@@ -41,6 +41,12 @@ class TaskController extends Controller
             'title' => 'required',
             'description' => 'nullable'
         ]);
+
+        Task::create([
+            'title' => $request->title,
+            'description' => $request->description
+        ]);
+
     }
 
     /**
