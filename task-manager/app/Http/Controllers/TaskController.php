@@ -99,12 +99,12 @@ class TaskController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy($id)
-{
-    $task = Task::findOrFail($id);
+    {
+        $task = Task::findOrFail($id);
 
-    $task->delete();
+        $task->delete();
 
-    return redirect()->route('tasks.index');
-}
+        return redirect()->route('tasks.index');
+    }
 
 }
