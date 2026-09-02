@@ -15,8 +15,13 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+        $tasks = Task::all();
+
+        return Inertia::render('Tasks/Index', [
+            'tasks' => $tasks
+        ]);
     }
+
 
     /**
      * Show the form for creating a new resource.
