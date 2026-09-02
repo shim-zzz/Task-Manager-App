@@ -24,5 +24,9 @@
             <button type="submit">Add Task</button>
         </form>
 
+        <br>
+
+    <a href="{{ route('tasks.index') }}">Back to Tasks</a>
+
 </body>
 </html>
