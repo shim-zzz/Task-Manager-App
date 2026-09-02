@@ -7,5 +7,12 @@
 </head>
 <body>
     
+    <h1>Add New Task</h1>
+
+        <form action="{{ route('tasks.store') }}" method="POST">
+            @csrf
+
+        </form>
+
 </body>
 </html>
