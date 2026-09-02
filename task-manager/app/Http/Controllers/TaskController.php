@@ -91,6 +91,7 @@ class TaskController extends Controller
         'completed' => $request->boolean('completed'),
     ]);
 
+    return redirect()->route('tasks.index');
 
 }
 
