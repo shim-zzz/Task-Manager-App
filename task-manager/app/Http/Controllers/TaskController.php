@@ -85,6 +85,13 @@ class TaskController extends Controller
 
     $task = Task::findOrFail($id);
 
+    $task->update([
+        'title' => $request->title,
+        'description' => $request->description,
+        'completed' => $request->boolean('completed'),
+    ]);
+
+
 }
 
     /**
