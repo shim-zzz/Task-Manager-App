@@ -47,6 +47,8 @@ class TaskController extends Controller
             'description' => $request->description
         ]);
 
+        return redirect()->route('tasks.index');
+
     }
 
     /**
