@@ -30,5 +30,10 @@
         </label>
 
         <br><br>
+
+        <button type="submit">Update Task</button>
+    </form>
+
+    <br>
 </body>
 </html>
