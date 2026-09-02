@@ -21,7 +21,7 @@
             <textarea name="description"></textarea>
 
             <br><br>
-            
+            <button type="submit">Add Task</button>
         </form>
 
 </body>
