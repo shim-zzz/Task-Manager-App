@@ -82,7 +82,9 @@ class TaskController extends Controller
         'description' => 'nullable',
         'completed' => 'nullable|boolean',
     ]);
-    
+
+    $task = Task::findOrFail($id);
+
 }
 
     /**
