@@ -12,6 +12,10 @@
         <form action="{{ route('tasks.store') }}" method="POST">
             @csrf
 
+            <label>Task Title:</label>
+            <input type="text" name="title" required>
+
+            <br><br>
         </form>
 
 </body>
