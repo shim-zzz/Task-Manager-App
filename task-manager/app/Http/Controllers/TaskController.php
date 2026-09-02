@@ -28,8 +28,9 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Tasks/Create');
     }
+
 
     /**
      * Store a newly created resource in storage.
