@@ -22,5 +22,13 @@
         <textarea name="description">{{ $task->description }}</textarea>
 
         <br><br>
+
+        <label>
+            <input type="checkbox" name="completed" value="1"
+                {{ $task->completed ? 'checked' : '' }}>
+            Completed
+        </label>
+
+        <br><br>
 </body>
 </html>
