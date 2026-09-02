@@ -16,6 +16,12 @@
             <input type="text" name="title" required>
 
             <br><br>
+
+            <label>Description:</label>
+            <textarea name="description"></textarea>
+
+            <br><br>
+            
         </form>
 
 </body>
