@@ -75,10 +75,15 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+    public function update(Request $request, $id)
+{
+    $request->validate([
+        'title' => 'required',
+        'description' => 'nullable',
+        'completed' => 'nullable|boolean',
+    ]);
+    
+}
 
     /**
      * Remove the specified resource from storage.
